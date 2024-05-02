@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'OptimusPrincepsCyr';
+	src: url('../fonts/optimusprincepscyr.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/optimusprincepscyr.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/optimusprincepscyr.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/optimusprincepscyr.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/optimusprincepscyr.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/optimusprincepscyr.svg#optimusprincepscyr') format('svg'); /* Chrome < 4, Legacy iOS */
+}

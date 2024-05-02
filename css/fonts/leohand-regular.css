@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'LeoHand-Regular';
+	src: url('../fonts/leohand-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/leohand-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/leohand-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/leohand-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/leohand-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/leohand-regular.svg#leohand-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
