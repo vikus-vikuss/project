@@ -1,11 +1,9 @@
 <?php
 session_start(); // Обязательно начинайте сессию на странице, чтобы иметь доступ к данным пользователя
-
 // Проверяем существование данных пользователя в сессии
 $phone = isset($_SESSION['phone']) ? $_SESSION['phone'] : '';
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,10 +59,8 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         document.addEventListener("DOMContentLoaded", function() {
             // Получаем данные из сессии, которые были сохранены при входе или регистрации
             const phone = "<?php echo isset($_SESSION['phone']) ? $_SESSION['phone'] : ''; ?>";
-            const username = "<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : ''; ?>";
-
+            const username = "<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : ''; ?>"
         });
-    
 function logout() {
     fetch('php/logout.php')
         .then(response => {
@@ -89,7 +85,6 @@ function logout() {
                 }
             }
         }
-
         function logout() {
             fetch('php/logout.php')
                 .then(response => {
@@ -105,7 +100,6 @@ function logout() {
     <script>
         // Получаем ссылку на элемент "Главная"
 const homeLink = document.querySelector('.links-list a');
-
 // При нажатии на ссылку "Главная" выполняем навигацию назад в истории браузера
 homeLink.addEventListener('click', function(event) {
     event.preventDefault();
@@ -116,12 +110,10 @@ homeLink.addEventListener('click', function(event) {
 function openModal() {
     document.getElementById('logoutModal').style.display = 'block';
 }
-
 // Закрытие модального окна
 function closeModal() {
     document.getElementById('logoutModal').style.display = 'none';
 }
-
 // Функция для выхода из аккаунта
 function logout() {
     fetch('php/logout.php', {
@@ -141,7 +133,6 @@ function logout() {
         }
     })
     .catch(error => console.error(error));
-
 }
 </script>
 </body>
