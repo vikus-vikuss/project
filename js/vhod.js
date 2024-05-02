@@ -293,7 +293,7 @@ function authenticateUser(login, password) {
                 document.getElementById('profile_link').style.display = 'inline'; 
 
                 // Открываем страницу index-2.php сразу после успешной авторизации
-                window.location.href = './index-2.php';
+                window.location.href = '/index-2.php';
                 // После успешной аутентификации вызываем функцию для обновления интерфейса корзины
                 handleSuccessfulAuth();
             } else {
